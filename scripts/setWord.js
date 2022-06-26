@@ -29,5 +29,6 @@ insert.addEventListener("click", async function () {
 
 reset.addEventListener("click", function () {
     termo.value = '';
-    response.innerHTML = '';
+    response.removeChild(word);
+    response.removeChild(definitions);
 });
